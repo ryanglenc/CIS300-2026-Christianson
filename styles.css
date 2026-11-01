@@ -1,0 +1,261 @@
+/* ============================================
+   DrC Team Dashboard — shared stylesheet
+   Brand palette + type from DrC_Branding_Q426
+   ============================================ */
+
+:root {
+  --color-navy: #0f2d3d;
+  --color-teal: #4e9a8f;
+  --color-blue: #3b82c4;
+  --color-pale: #e8f0f4;
+  --color-crimson: #b23a48;
+  --color-offwhite: #f9fafb;
+  --color-muted: #5b7683;
+  --font-head: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+  --font-kicker: "Ubuntu", Arial, sans-serif;
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-offwhite);
+  color: var(--color-navy);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-blue);
+}
+
+/* ---------- header / nav ---------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.25rem 2rem;
+  border-bottom: 1px solid var(--color-pale);
+  background: #ffffff;
+}
+
+.site-header .brand {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-navy);
+  text-decoration: none;
+}
+
+.site-header .brand span {
+  color: var(--color-teal);
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--color-navy);
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--color-crimson);
+  border-bottom-color: var(--color-crimson);
+}
+
+/* ---------- main content ---------- */
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+.kicker {
+  font-family: var(--font-kicker);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--color-teal);
+}
+
+h1 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin: 0.4rem 0 0.75rem;
+  color: var(--color-navy);
+}
+
+h2 {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  color: var(--color-navy);
+}
+
+.lede {
+  font-size: 1.05rem;
+  color: var(--color-muted);
+  max-width: 620px;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- metric cards ---------- */
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.metric-card {
+  background: #ffffff;
+  border: 1px solid var(--color-pale);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.metric-card .metric-icon {
+  margin-bottom: 0.5rem;
+}
+
+.metric-card .value {
+  font-family: var(--font-head);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.metric-card .label {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin-top: 0.25rem;
+}
+
+.sample-note {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- table ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background: #ffffff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-pale);
+  font-size: 0.95rem;
+}
+
+th {
+  font-weight: 600;
+  color: var(--color-navy);
+  background: var(--color-pale);
+}
+
+/* ---------- form ---------- */
+
+.access-form {
+  background: #ffffff;
+  border: 1px solid var(--color-pale);
+  border-radius: var(--radius);
+  padding: 2rem;
+  max-width: 480px;
+}
+
+.field {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-navy);
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #c7d3d8;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: var(--color-crimson);
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #96303c;
+}
+
+/* ---------- video ---------- */
+
+.video-frame {
+  width: 100%;
+  max-width: 640px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-pale);
+  background: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--color-pale);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.site-footer a {
+  color: var(--color-blue);
+  margin: 0 0.5rem;
+}

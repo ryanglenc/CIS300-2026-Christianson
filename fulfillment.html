@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order fulfillment and shipping status across the DRC and TSF stores." />
+  <title>Fulfillment | DrC Team Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=DM+Sans:wght@400;500;600&family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">DR <span>CHRISTIANSON</span> &middot; TEAM DASHBOARD</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sales.html">Sales</a></li>
+        <li><a href="views.html">Views</a></li>
+        <li><a href="fulfillment.html" aria-current="page">Fulfillment</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="kicker">Fulfillment</p>
+    <h1>Keeping orders on track</h1>
+    <p class="lede">
+      A quick read on how fast orders are going out the door across both stores, so
+      delays get caught before a customer has to ask about them.
+    </p>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <svg class="metric-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M2 6l8-4 8 4-8 4-8-4z" stroke="#0f2d3d" stroke-width="1.5" fill="none" />
+          <path d="M2 6v8l8 4 8-4V6" stroke="#0f2d3d" stroke-width="1.5" fill="none" />
+        </svg>
+        <div class="value">23</div>
+        <div class="label">Orders pending fulfillment</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">591</div>
+        <div class="label">Orders shipped this week</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">1.4 days</div>
+        <div class="label">Average time to ship</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">96%</div>
+        <div class="label">Shipped on time</div>
+      </div>
+    </div>
+    <p class="sample-note">Sample data shown &mdash; the live figures will come from the Shopify Orders API for both the DRC and TSF stores.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <a href="mailto:dashboard@drchristianson.com">dashboard@drchristianson.com</a>
+      &middot;
+      <a href="https://www.drchristianson.com" target="_blank" rel="noopener">drchristianson.com</a>
+    </p>
+    <p>&copy; 2026 Dr. Christianson &mdash; internal team dashboard</p>
+  </footer>
+</body>
+</html>

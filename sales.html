@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sales performance across the DRC store, TSF store, and Amazon." />
+  <title>Sales | DrC Team Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=DM+Sans:wght@400;500;600&family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">DR <span>CHRISTIANSON</span> &middot; TEAM DASHBOARD</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sales.html" aria-current="page">Sales</a></li>
+        <li><a href="views.html">Views</a></li>
+        <li><a href="fulfillment.html">Fulfillment</a></li>
+        <li><a href="subscriptions.html">Subscriptions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="kicker">Sales</p>
+    <h1>Sales across every channel</h1>
+    <p class="lede">
+      A single view of product sales across the DRC store, the TSF store, and Amazon,
+      so we can see which channel is actually driving revenue this week.
+    </p>
+
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="value">$18,240</div>
+        <div class="label">Total revenue this week</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">614</div>
+        <div class="label">Units sold this week</div>
+      </div>
+      <div class="metric-card">
+        <div class="value">$29.71</div>
+        <div class="label">Average order value</div>
+      </div>
+    </div>
+    <p class="sample-note">Sample data shown &mdash; the live figures will come from the Shopify Admin API for DRC and TSF, and Amazon Seller Central for Amazon.</p>
+
+    <h2>Recent orders by channel</h2>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Channel</th>
+          <th scope="col">Units sold</th>
+          <th scope="col">Revenue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DRC store</td>
+          <td>341</td>
+          <td>$9,870</td>
+        </tr>
+        <tr>
+          <td>TSF store</td>
+          <td>198</td>
+          <td>$6,120</td>
+        </tr>
+        <tr>
+          <td>Amazon</td>
+          <td>75</td>
+          <td>$2,250</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      <a href="mailto:dashboard@drchristianson.com">dashboard@drchristianson.com</a>
+      &middot;
+      <a href="https://www.drchristianson.com" target="_blank" rel="noopener">drchristianson.com</a>
+    </p>
+    <p>&copy; 2026 Dr. Christianson &mdash; internal team dashboard</p>
+  </footer>
+</body>
+</html>
