@@ -6,6 +6,8 @@
 :root {
   --color-navy: #0f2d3d;
   --color-teal: #4e9a8f;
+  --color-teal-text: #2f7468;
+  --color-link: #256aa8;
   --color-blue: #3b82c4;
   --color-pale: #e8f0f4;
   --color-crimson: #b23a48;
@@ -30,7 +32,7 @@ body {
 }
 
 a {
-  color: var(--color-blue);
+  color: var(--color-link);
 }
 
 /* ---------- header / nav ---------- */
@@ -55,7 +57,7 @@ a {
 }
 
 .site-header .brand span {
-  color: var(--color-teal);
+  color: var(--color-teal-text);
 }
 
 .site-nav ul {
@@ -94,7 +96,7 @@ main {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: var(--color-teal);
+  color: var(--color-teal-text);
 }
 
 h1 {
@@ -256,6 +258,6 @@ textarea {
 }
 
 .site-footer a {
-  color: var(--color-blue);
+  color: var(--color-link);
   margin: 0 0.5rem;
 }
